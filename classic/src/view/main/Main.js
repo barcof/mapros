@@ -88,27 +88,33 @@ Ext.define('mapros.view.main.Main', {
     },
 
     items: [{
-        title: 'Dashboard',
-        iconCls: 'fa-home',
+        title: 'Record Data',
+        iconCls: 'fa-clipboard',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Scanner',
-        iconCls: 'fa-chevron-circle-right',
+        title: 'Print Barcode',
+        iconCls: 'fa-print',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
-        title: 'Sequence',
-        iconCls: 'fa-chevron-circle-right',
+        title: 'Settings',
+        iconCls: 'fa-cog',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
         title: 'Line',
-        iconCls: 'fa-chevron-circle-right',
+        iconCls: 'fa-map',
+        bind: {
+            html: '{loremIpsum}'
+        }
+    }, {
+        title: 'Log',
+        iconCls: 'fa-file',
         bind: {
             html: '{loremIpsum}'
         }

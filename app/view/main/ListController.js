@@ -22,16 +22,16 @@ Ext.define('mapros.view.main.ListController', {
       modal.show();
     },
 
-    onDelete(sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
+    // onDelete(sender, record) {
+    //     Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    // },
 
     onDelete(grid,rowIndex,colIndex) {
-        console.log({
-            grid,
-            rowIndex,
-            colIndex
-        })
+        // console.log({
+        //     grid,
+        //     rowIndex,
+        //     colIndex
+        // })
         let store = Ext.getStore('Master');
         let record = grid.store.getAt(rowIndex);
         Ext.Msg.confirm('Delete Record', 'Are you sure you want delete ?',

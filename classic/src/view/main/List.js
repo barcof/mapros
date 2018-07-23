@@ -38,6 +38,8 @@ Ext.define('mapros.view.main.List', {
         items: [{
             xtype: 'button',
             name: 'tambah',
+            ui: 'action',
+            // iconCls: 'fa-plus-square-o',
             text: 'Add Item',
             listeners: {
                 click: 'addOnClick'
@@ -84,13 +86,6 @@ Ext.define('mapros.view.main.List', {
                 iconCls: 'x-fa fa-trash',
                 tooltip: 'Delete',
                 handler: 'onDelete'
-                // handler: function(grid, rowIndex, colIndex) {
-                //     let store = Ext.getStore('Master');
-                //     var rec = grid.store.getAt(rowIndex);
-                //     store.remove(rec);
-                //     // console.log("Delete = " + rec.get('name'));
-                //     // console.log(store);
-                // }
             }]
         }
     ],
